@@ -2,6 +2,9 @@
 
 require "GeneratorSettings.php";
 
+/**
+ * 
+ */
 class PassGenerator{
 
 	private $settings;
