@@ -1,6 +1,6 @@
 <?php
 
-require "GeneratorSettings.php";
+require_once "GeneratorSettings.php";
 
 /**
  * Will generate a passphrase based on the settings given by a GenneratorSettings object.
@@ -31,10 +31,9 @@ class PassGenerator{
 	 */
 	public function generate(){
 		$settings = $this->settings;
-		$delimiter = "-";
 		$chosenWords = [];
-		$wordlist = $settings->wordlist;
-		$numWords = $settings->numWords;
+		$wordlist = $settings->getWordList();
+		$numWords = $settings->getNumWords();
 
 		// Randomly pick a new word to go in sequence
 		for($i = 0; $i < $numWords; $i++){
@@ -42,16 +41,16 @@ class PassGenerator{
 			$chosenWords[] = $wordlist[$random_i];
 		}
 
-		$passphrase = implode("-", $chosenWords);	
-
+		// Combine words with delimiter
+		$passphrase = implode($settings->getDelimiter(), $chosenWords);	
 
 		// add num
-		if($settings->hasNum){
+		if($settings->getHasNum()){
 			$passphrase .= rand(0,9);
 		}
 
 		// add special character
-		if($settings->hasSpclChar){
+		if($settings->getHasSpclChar()){
 			$spclChar = GeneratorSettings::$possibleSpclChar;
 			$passphrase .= $spclChar[rand(0, count($spclChar)-1)];
 		}
