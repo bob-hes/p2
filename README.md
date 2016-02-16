@@ -16,6 +16,9 @@ Live Site: [p2.bobsaludo.me](http://p2.bobsaludo.me)
 - Why so complicated?
 - server - rather on a file not in a directory, so as not to suggest the file structure
 - easier to add new properties
+
+- according to php the right way, and for its reputation
+- found "" vs ''
  -->
 
 <!-- Dependencies 

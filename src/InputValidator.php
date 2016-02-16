@@ -23,13 +23,19 @@ class InputValidator{
 
 
 	/**
-	 * Checks if the number of words in the passphrase is valid
+	 * Checks if the number of words in the passphrase is valid.
 	 * 
 	 * @param  Mixed $num - valid if integer between 2 and 15.
 	 */
-	public function numWords($num){
+	public function numWords(&$num){
 		$min = 2;
 		$max = 15;
+
+		// If number is string, switch to integer
+		if(is_numeric($num) && gettype($num) === "string"){
+			settype($num, "integer");
+		}
+
 
 		if(gettype($num) !== "integer"){
 			$this->foundInvalid(__FUNCTION__, "Must be an integer");

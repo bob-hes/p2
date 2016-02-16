@@ -56,8 +56,8 @@ class GeneratorSettings{
 	 * not found in this class but found in the array will be
 	 * skipped.
 	 * 
-	 * @param String[] -> String $arr - an array, most likely $_POST 
-	 * or derived from $_POST, that will hold the settings wanted to be
+	 * @param String[] -> String $arr - an array, most likely $_GET or $_POST 
+	 * or derived from $_GET or $_POST, that will hold the settings wanted to be
 	 * changed. Any array key not found as a property will be skipped.
 	 */
 	public function setFromArray($arr){
