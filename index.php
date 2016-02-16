@@ -24,6 +24,11 @@
 			<input <?php $fr->checkbox("uc1st"); ?> /> First character uppercase<br />
 			<input <?php $fr->text("seperator", "-"); ?> maxlength="1" size="1" /> Seperator <br />
 			<input type="submit" />
+
+			<!-- schneier method? first letter of every word in sentence -->
+			<!-- The "troubador" method; http://security.stackexchange.com/questions/6095/xkcd-936-short-complex-password-or-long-dictionary-passphrase/6096#6096 -->
+			<!-- languages -->
+			<!-- 256 >  -->
 		</form>
 
 		<br />
