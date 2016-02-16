@@ -21,6 +21,7 @@
 			<input <?php $fr->number("numWords", 4); ?> min="2" max="15" /> Num Words<br />
 			<input <?php $fr->checkbox("hasNum"); ?> /> Has Num<br />
 			<input <?php $fr->checkbox("hasSpclChar"); ?> /> Has Special Char<br />
+			<input <?php $fr->checkbox("uc1st"); ?> /> First character uppercase<br />
 			<input <?php $fr->text("seperator", "-"); ?> maxlength="1" size="1" /> Seperator <br />
 			<input type="submit" />
 		</form>

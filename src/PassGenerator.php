@@ -44,6 +44,11 @@ class PassGenerator{
 		// Combine words with delimiter
 		$passphrase = implode($settings->seperator, $chosenWords);	
 
+		// First Upper Case
+		if($settings->uc1st){
+			$passphrase = ucfirst($passphrase);
+		}
+
 		// add num
 		if($settings->hasNum){
 			$passphrase .= rand(0,9);

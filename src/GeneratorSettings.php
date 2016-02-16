@@ -26,6 +26,9 @@ class GeneratorSettings{
 		"hasNum" => false,
 		"hasSpclChar" => false,
 		"seperator" => "-",
+		"uc1st" => false,
+
+
 		"validator" => null
 	];
 
