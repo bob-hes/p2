@@ -11,11 +11,10 @@ class InputValidator{
 
 	/**
 	 * Flags this instance being checked as invalid and stores the
-	 * invalid element
+	 * invalid element along with a description
 	 * 
-	 * @param  [type] $fieldname    [description]
-	 * @param  [type] $errorMessage [description]
-	 * @return [type]               [description]
+	 * @param  String $fieldname    - name of field found to have invalid value
+	 * @param  String $errorMessage - description of why field is invalid
 	 */
 	private function foundInvalid($fieldname, $errorMessage){
 		$this->valid = false;

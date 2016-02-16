@@ -18,4 +18,6 @@ Live Site: [p2.bobsaludo.me](http://p2.bobsaludo.me)
 - easier to add new properties
  -->
 
-<!-- Dependencies -->
+<!-- Dependencies 
+jquery
+-->
