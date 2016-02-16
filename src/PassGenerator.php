@@ -32,8 +32,8 @@ class PassGenerator{
 	public function generate(){
 		$settings = $this->settings;
 		$chosenWords = [];
-		$wordlist = $settings->getWordList();
-		$numWords = $settings->getNumWords();
+		$wordlist = $settings->wordlist;
+		$numWords = $settings->numWords;
 
 		// Randomly pick a new word to go in sequence
 		for($i = 0; $i < $numWords; $i++){
@@ -42,15 +42,15 @@ class PassGenerator{
 		}
 
 		// Combine words with delimiter
-		$passphrase = implode($settings->getDelimiter(), $chosenWords);	
+		$passphrase = implode($settings->delimiter, $chosenWords);	
 
 		// add num
-		if($settings->getHasNum()){
+		if($settings->hasNum){
 			$passphrase .= rand(0,9);
 		}
 
 		// add special character
-		if($settings->getHasSpclChar()){
+		if($settings->hasSpclChar){
 			$spclChar = GeneratorSettings::$possibleSpclChar;
 			$passphrase .= $spclChar[rand(0, count($spclChar)-1)];
 		}
