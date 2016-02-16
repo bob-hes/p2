@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
-
-	<script src="jquery-1.12.0.min.js"></script>
-
-
+		<title>XKCD Password Generator</title>
+		<script src="jquery-1.12.0.min.js"></script>
 
 	</head>
 	<body>
 		
 
-		<form method="post">
+		<form method="get">
 			<?php
-			require_once("src/FormRepopulater.php");
-			require_once("src/PassGenerator.php");
-			$fr = new FormRepopulater($_POST);
-
-			var_dump($_POST);
+			require_once("src/autoload.php");
+			$fr = new FormRepopulater($_GET);
 			?>
 
 
@@ -33,10 +28,6 @@
 
 		<div id="passphrase">
 			<?php
-			ini_set('display_errors',1);
-			ini_set('display_startup_errors',1);
-			error_reporting(-1);
-
 
 			$settings = new GeneratorSettings();
 			$settings->setFromArray($_GET);

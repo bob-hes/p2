@@ -5,8 +5,20 @@ Live Site: [p2.bobsaludo.me](http://p2.bobsaludo.me)
 
 <!-- [Video Demo]() -->
 
+The Password Generator comes from the below shown [xkcd comic strip](http://xkcd.com/936/) by Randall Munroe.
+
+![xkcd 946 - Password Strength](http://imgs.xkcd.com/comics/password_strength.png "xkcd 946 - Password Strength")
+
+
 <!-- Description
-- can variable variable method calls
+Want to use this, as well as use it for another project where I can,
+- repopulate forms easily
+- set forms easily
+- check if on sessions on saved forms, and of the fields changed, instead of updating on every single field
+- validate the changed fields easily
+
+
+- can variable variable method call
 - can set magic methods in order to privatize all the variables and thus force them to have to be validated
 - optional variables
 - Fatal error when trying to find Validator.php
