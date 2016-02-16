@@ -13,16 +13,19 @@
 	<body>
 		
 
-		<form method="get">
+		<form method="post">
 			<?php
-			$fm = new FormMaker();
+			require_once("src/FormRepopulater.php");
+			require_once("src/PassGenerator.php");
+			$fr = new FormRepopulater($_POST);
 
+			var_dump($_POST);
 			?>
 
 
-			<input <?php $fm->number("numWords", 4); ?> min="2" max="15" /> Num Words<br />
-			<input <?php $fm->checkbox("hasNum"); ?> /> Has Num<br />
-			<input <?php $fm->checkbox("hasSpclChar"); ?> /> Has Special Char<br />
+			<input <?php $fr->number("numWords", 4); ?> min="2" max="15" /> Num Words<br />
+			<input <?php $fr->checkbox("hasNum"); ?> /> Has Num<br />
+			<input <?php $fr->checkbox("hasSpclChar"); ?> /> Has Special Char<br />
 			<input type="submit" />
 		</form>
 
@@ -30,7 +33,6 @@
 
 		<div id="passphrase">
 			<?php
-			require_once("src/PassGenerator.php");
 			ini_set('display_errors',1);
 			ini_set('display_startup_errors',1);
 			error_reporting(-1);
