@@ -33,10 +33,10 @@ Form repopulation simply becomes:
 
 List of "Today I Learn" (TIL) from coding this project:
 * Variable variables - you can make strings into variable names.
-** So, if $myvar = "earth", you can run $$myvar = "ground", and now $earth === "ground.
+ * So, if $myvar = "earth", you can run $$myvar = "ground", and now $earth === "ground.
 * Methods can also be called by variable variables.
 * Magic Methods __get and __set can add more control to accessing object properties when the properties are accessed in a somewhat similiar manner.
-** Since all properties could potentially be validated, but have different validation requirements, I used __set to check if there are any validation tests on the form field.
+ * Since all properties could potentially be validated, but have different validation requirements, I used __set to check if there are any validation tests on the form field.
 * There seems to be a fatal error from trying to require a file name "Validator.php". Might need to check on that later.
 
 <!-- Dependencies -->

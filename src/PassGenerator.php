@@ -42,7 +42,7 @@ class PassGenerator{
 		}
 
 		// Combine words with delimiter
-		$passphrase = implode($settings->delimiter, $chosenWords);	
+		$passphrase = implode($settings->seperator, $chosenWords);	
 
 		// add num
 		if($settings->hasNum){

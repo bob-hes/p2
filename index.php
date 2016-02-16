@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>XKCD Password Generator</title>
+		<title>bzs's xkcd Password Generator</title>
 		<script src="jquery-1.12.0.min.js"></script>
 
 	</head>
@@ -21,6 +21,7 @@
 			<input <?php $fr->number("numWords", 4); ?> min="2" max="15" /> Num Words<br />
 			<input <?php $fr->checkbox("hasNum"); ?> /> Has Num<br />
 			<input <?php $fr->checkbox("hasSpclChar"); ?> /> Has Special Char<br />
+			<input <?php $fr->text("seperator", "-"); ?> maxlength="1" size="1" /> Seperator <br />
 			<input type="submit" />
 		</form>
 

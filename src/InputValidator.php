@@ -18,7 +18,7 @@ class InputValidator{
 	 */
 	private function foundInvalid($fieldname, $errorMessage){
 		$this->valid = false;
-		$this->inputsInvalid[__FUNCTION__] = $errorMessage;
+		$this->inputsInvalid[$fieldname] = $errorMessage;
 	}
 
 

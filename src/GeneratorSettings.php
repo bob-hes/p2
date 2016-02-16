@@ -25,7 +25,7 @@ class GeneratorSettings{
 		"numWords" => 4,
 		"hasNum" => false,
 		"hasSpclChar" => false,
-		"delimiter" => "-",
+		"seperator" => "-",
 		"validator" => null
 	];
 

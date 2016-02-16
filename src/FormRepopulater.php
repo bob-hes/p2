@@ -40,6 +40,23 @@ class FormRepopulater{
 	}
 
 	/**
+	 * Creates the definite attributes of a text
+	 * input type and repopulates it
+	 * 
+	 * @param  String $name    - fieldname
+	 * @param  String $default - default text
+	 * @return string - type, name, and default value of the input
+	 */
+	public function text($name, $default=""){
+		
+		if($this->haveRepop($name)){
+			$default = $this->repopulateInfo[$name];
+		}
+
+		echo " type='text' name='$name' value='$default' ";
+	}
+
+	/**
 	 * Creates the definite attributes of a number
 	 * input type and repopulates it
 	 * 
