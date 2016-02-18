@@ -45,7 +45,14 @@
 						if(!$valid){ 
 							echo '
 							<div class="alert alert-warning">
-								Options don\'t seem to be valid. Passphrases will be made from default settings.
+								Options don\'t seem to be valid. <br />';
+
+								foreach($settings->getInvalids() as $msg){
+									echo $msg . "<br />";
+								}
+								
+							echo'
+								Passphrases will be made from default settings.
 							</div>';
 					
 							// Set to default setting

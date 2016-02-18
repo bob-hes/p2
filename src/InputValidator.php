@@ -38,10 +38,22 @@ class InputValidator{
 
 
 		if(gettype($num) !== "integer"){
-			$this->foundInvalid(__FUNCTION__, "Must be an integer");
+			$this->foundInvalid(__FUNCTION__, "Number of Words: Must be an integer.");
 		}
 		else if($num < $min || $num > $max){
-			$this->foundInvalid(__FUNCTION__, "Must be more than $min and less than $max");
+			$this->foundInvalid(__FUNCTION__, "Number of Words: Must be more than $min and less than $max.");
+		}
+	}
+
+	/**
+	 * Checks for seperator to be 1 character at most
+	 * 
+	 * @param  Mixed $sep - seperator should be 1 char
+	 */
+	public function seperator(&$sep){
+
+		if(strlen($sep) > 1){
+			$this->foundInvalid(__FUNCTION__, "Seperator could only be 1 char.");
 		}
 
 	}
