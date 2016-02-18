@@ -31,6 +31,18 @@ Form repopulation simply becomes:
 <input <?php $fr->text("firstname"); ?> />
 ```
 
+Tools and Dependencies Used:
+* [layoutit.com](http://www.layoutit.com/) for the frontend, which uses [Bootstrap](http://getbootstrap.com/)
+* [jQuery](https://jquery.com/) for the Bootstrap. The library is from [Google](https://developers.google.com/speed/libraries/).
+* [paulnoll.com](http://www.paulnoll.com/Books/Clear-English/words-01-02-hundred.html) for the word list.
+ 
+Things Wish to Expand on if More Time:
+* Automatic copying
+* Adding Spanish words
+* Adding the ability to try out the methods from the rebuttals to xkcd's proposal
+ * [Bruce Schneier's Rebuttal](https://www.schneier.com/blog/archives/2014/03/choosing_secure_1.html#!s!xkcd)
+ * [Mark Burnett's Rebuttal](https://web.archive.org/web/20150319220514/https://xato.net/passwords/analyzing-the-xkcd-comic/#.VsWoSpMrLUI)
+
 List of "Today I Learn" (TIL) from coding this project:
 * Variable variables - you can make strings into variable names.
  * So, if $myvar = "earth", you can run $$myvar = "ground", and now $earth === "ground.
@@ -39,8 +51,4 @@ List of "Today I Learn" (TIL) from coding this project:
  * Since all properties could potentially be validated, but have different validation requirements, I used __set to check if there are any validation tests on the form field.
 * There seems to be a fatal error from trying to require a file name "Validator.php". Might need to check on that later.
 
-<!-- Dependencies
-http://www.layoutit.com/ using Bootstrap
-jQuery
- -->
 
