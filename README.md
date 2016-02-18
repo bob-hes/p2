@@ -3,7 +3,7 @@
 Live Site: [p2.bobsaludo.me](http://p2.bobsaludo.me)
 
 
-[Video Demo](https://youtu.be/3IGlKvP92jw)
+[Video Demo](https://vimeo.com/155851904)
 
 The Password Generator comes from this [xkcd comic strip](http://xkcd.com/936/) by Randall Munroe. Randall argues that complicated short passwords (where letters are replaced by numbers and special characters) are easier to crack than easier-to-remember longer passphrases.
 
