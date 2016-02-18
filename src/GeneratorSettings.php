@@ -1,5 +1,6 @@
 <?php
 require_once "InputValidator.php";
+require_once "Scraper.php";
 
 /**
  * Configuration of settings to be given to the password generator.
@@ -21,14 +22,13 @@ class GeneratorSettings{
 	// - Properties may also be set with a set<Property Name>() method as long as
 	// the property name begins with lowercase letter.
 	private $conf = [
-		"wordlist" => ["a","bb","ccc","dddd"],
+		"wordlist" => [],
 		"numWords" => 4,
 		"hasNum" => false,
 		"hasSpclChar" => false,
 		"seperator" => "-",
 		"uc1st" => false,
-		"useSpanish" => false,
-
+		"capitalize" => false,
 
 		"validator" => null
 	];
@@ -51,6 +51,10 @@ class GeneratorSettings{
 		else if(!empty($ownValidator) && gettype($ownValidator) !== "InputValidator"){
 			throw new InvalidArgumentException("GeneratorSettings only accepts InputValidator in initializing");
 		}
+
+		// Add wordlist from scraper
+		$d = new DictScraper();	
+		$this->wordlist = $d->scrapeDefault();
 	}
 
 	/**

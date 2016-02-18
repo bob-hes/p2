@@ -34,11 +34,17 @@ class PassGenerator{
 		$chosenWords = [];
 		$wordlist = $settings->wordlist;
 		$numWords = $settings->numWords;
+		$c = $settings->capitalize;
 
 		// Randomly pick a new word to go in sequence
 		for($i = 0; $i < $numWords; $i++){
 			$random_i = rand(0, count($wordlist)-1);
-			$chosenWords[] = $wordlist[$random_i];
+
+			// Capitalize every word if directed
+			$word = $wordlist[$random_i];
+			if($c) $word = ucfirst($word);
+
+			$chosenWords[] = $word;
 		}
 
 		// Combine words with delimiter

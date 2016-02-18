@@ -129,8 +129,8 @@
 									<div class="col-sm-offset-1 col-sm-2">
 										<div class="checkbox">
 											<label>
-												<input <?php $fr->checkbox("useSpanish"); ?> /> 
-												Include Spanish Words
+												<input <?php $fr->checkbox("capitalize"); ?> /> 
+												Capitalize each word
 											</label>
 										</div>
 									</div>
