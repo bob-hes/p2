@@ -33,7 +33,7 @@ class FormRepopulater{
 	 * this field; false otherwise
 	 */
 	private function haveRepop($name){
-		if(!empty($this->repopulateInfo[$name])){
+		if(isset($this->repopulateInfo[$name])){
 			return true;
 		}
 		return false;

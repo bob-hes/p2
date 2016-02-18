@@ -47,4 +47,10 @@ AJAX
 Not use stop words
 last 900 Spanish words - http://www.101languages.net/spanish/most-common-spanish-words/
 replaced the spanish accents with english typable
+
+words = [];
+$("tbody .column-2").each(function(i, elem){  
+    words.push(elem.innerHTML);
+});
+words
  -->
