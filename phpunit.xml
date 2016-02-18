@@ -1,0 +1,7 @@
+<phpunit bootstrap="src/PassGenerator.php">
+    <testsuites>
+		<testsuite name="Bar"> 
+			<directory>.</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
