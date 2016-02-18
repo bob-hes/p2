@@ -27,6 +27,7 @@ class GeneratorSettings{
 		"hasSpclChar" => false,
 		"seperator" => "-",
 		"uc1st" => false,
+		"useSpanish" => false,
 
 
 		"validator" => null

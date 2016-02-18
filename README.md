@@ -39,4 +39,12 @@ List of "Today I Learn" (TIL) from coding this project:
  * Since all properties could potentially be validated, but have different validation requirements, I used __set to check if there are any validation tests on the form field.
 * There seems to be a fatal error from trying to require a file name "Validator.php". Might need to check on that later.
 
-<!-- Dependencies -->
+<!-- Dependencies
+http://www.layoutit.com/ using Bootstrap
+jQuery
+AJAX
+
+Not use stop words
+last 900 Spanish words - http://www.101languages.net/spanish/most-common-spanish-words/
+replaced the spanish accents with english typable
+ -->

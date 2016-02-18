@@ -1,0 +1,20 @@
+body{
+	background-color: #96A8C8;
+}
+
+.content{
+	margin-top: 8px;
+	background-color: white;
+	border-radius:10px;
+	border-style: solid;
+    border-width: 1.5px;
+    border-color: #071419;
+}
+
+.passphrases{
+	text-align: center;
+}
+
+.submit{
+	margin-left: 50px
+}
