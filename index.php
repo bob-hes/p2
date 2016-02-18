@@ -50,7 +50,6 @@
 								foreach($settings->getInvalids() as $msg){
 									echo $msg . "<br />";
 								}
-								
 							echo'
 								Passphrases will be made from default settings.
 							</div>';

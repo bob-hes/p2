@@ -3,7 +3,7 @@
 Live Site: [p2.bobsaludo.me](http://p2.bobsaludo.me)
 
 
-<!-- [Video Demo]() -->
+[Video Demo](https://youtu.be/3IGlKvP92jw)
 
 The Password Generator comes from this [xkcd comic strip](http://xkcd.com/936/) by Randall Munroe. Randall argues that complicated short passwords (where letters are replaced by numbers and special characters) are easier to crack than easier-to-remember longer passphrases.
 
@@ -35,6 +35,7 @@ Tools and Dependencies Used:
 * [layoutit.com](http://www.layoutit.com/) for the frontend, which uses [Bootstrap](http://getbootstrap.com/)
 * [jQuery](https://jquery.com/) for the Bootstrap. The library is from [Google](https://developers.google.com/speed/libraries/).
 * [paulnoll.com](http://www.paulnoll.com/Books/Clear-English/words-01-02-hundred.html) for the word list.
+* [PHPUnit Testing Framework](https://phpunit.de/) 
  
 Things Wish to Expand on if More Time:
 * Automatic copying
